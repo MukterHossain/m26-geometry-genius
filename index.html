@@ -18,6 +18,7 @@
         <div class="flex flex-col md:flex-row gap-4" >
             <!-- shape card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
                 <!-- Triangle card -->
                 <div class="card w-68 bg-base-100 shadow-xl">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
@@ -49,21 +50,28 @@
                       <p class="text-center text-3xl">Area = W X I</p>
                       <div>
                         <!-- rectangle length -->
-                        <input id="triangle-base" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="length">
+                        <input id="rectangle-length" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="length">
                         <span class="mr-4 ml-4">cm</span>
-                         <!-- rectangle length -->
-                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-height" placeholder="width">
+                         <!-- rectangle width -->
+                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="rectangle-width" placeholder="width">
                         <span>cm</span>
                       </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions ">
-                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Buy Now</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
 
-                <!-- Triangle card -->
+
+
+                <!-- Parallelogram card -->
                 <div class="card w-68 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Shoes!</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -75,7 +83,7 @@
 
                 <!-- Triangle card -->
                 <div class="card w-68 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Shoes!</h2>
                       <p>If a dog chews shoes whose shoes does he choose?</p>
