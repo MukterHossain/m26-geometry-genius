@@ -167,6 +167,7 @@
                     </div>
                   </div>
 
+  
             </div>
             <!-- Area calculation container -->
             <div class="w-68 border-2 border-gray-700 rounded-md">
@@ -174,6 +175,135 @@
 
             </div>
         </div>
+
+
+
+
+
+
+
+
+         <!-- ========================
+                  task Section
+         ========================== -->
+        <section>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-24">
+
+            <!-- Triangle task-1  -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+              <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-3xl text-center">Triangle</h2>
+
+                <p class="text-2xl text-center">Area: 0.5 * b * h</p>
+                <div class="flex gap-2">
+                  <input id="triangle-task-base" class="w-20" type="text" placeholder="base">
+                  <span>cm</span>
+                  <br>
+                  <input id="triangle-task-height" class="w-20" type="text" placeholder="height">
+                  <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-xl text-center">Area: <span id="triangle-task-area">0</span><span>cm<sup>2</sup></span></p>
+                </div>
+
+                <div class="card-actions">
+                  <button onclick="triangleTaskCalculate()" class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Rectangle task-2  -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+              <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-3xl text-center">Rectangle</h2>
+                <p class="text-2xl text-center">Area: w * l</p>
+
+                <div class="flex gap-2">
+                  <input id="rectangle-task-width" class="w-20" type="text" placeholder="width">
+                  <span>cm</span>
+                  <br>
+                  <input id="rectangle-task-length" class="w-20" type="text" placeholder="length">
+                  <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-xl text-center">Area: <span id="rectangle-task-area">0</span><span>cm<sup>2</sup></span></p>
+                </div>
+                <div class="card-actions">
+                  <button onclick="calculateRectangleTaskArea()" class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <!-- Rhombus task-1  -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+              <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Rhombus</h2>
+                <p class="text-xl">Area (A) = 0.5* d<sub>1</sub> * d<sub>2</sub></p>
+
+                <div class="flex gap-2">
+                  <input id="rhombus-task-width" class="w-20" type="text" placeholder="width">
+                  <span>cm</span>
+                  <br>
+                  <input id="rhombus-task-length" class="w-20" type="text" placeholder="length">
+                  <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-xl text-center">Area: <span id="rhombus-task-area">0</span><span>cm<sup>2</sup></span></p>
+                </div>
+                <div class="card-actions">
+                  <button onclick="calculateRhombusTaskArea()" class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- pentagon task-1  -->
+            <div class="card w-80 bg-base-100 shadow-xl">
+              <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Pentagon</h2>
+                <p class="text-xl">Area (A) = 0.5* p * b</p>
+
+                <div class="flex gap-2">
+                  <input id="pentagon-task-p" class="w-20" type="text" placeholder="p">
+                  <span>cm</span>
+                  <br>
+                  <input id="pentagon-task-b" class="w-20" type="text" placeholder="b">
+                  <span>cm</span>
+                </div>
+
+                <div>
+                  <p class="text-xl text-center">Area: <span id="pentagon-task-area">0</span><span>cm<sup>2</sup></span></p>
+                </div>
+                <div class="card-actions">
+                  <button onclick="calculatePentagonTaskArea()" class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+            
+          </div>
+
+
+
+
+
+        </section>
 
     </main>
 
@@ -186,6 +316,7 @@
     <script src="js/pentagon.js"></script>
     <script src="js/ellipse.js"></script>
     <script src="js/rhombus.js"></script>
+    <script src="js/task.js"></script>
     
 </body>
 </html>
