@@ -73,25 +73,74 @@
                 <div class="card w-68 bg-base-100 shadow-xl">
                     <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b x h</p>
+                      <div>
+                        <!-- parallelogram base -->
+                        <input id="parallelogram-base" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="base">
+                        <span class="mr-4 ml-4">cm</span>
+                         <!-- parallelogram height -->
+                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="height">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions">
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
 
-                <!-- Triangle card -->
+
+                <!-- Pentagon card -->
                 <div class="card w-68 bg-base-100 shadow-xl">
-                    <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+                    <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area = 0.5 * p * b</p>
+                      <div class="flex gap-5">
+                          <input class="w-20 text-2xl p-2 rounded-sm"  id="pentagon-perimeter" type="text" placeholder="peri">
+                          <input class="w-20 text-2xl p-2 rounded-sm"  id="pentagon-apothem" type="text" placeholder="apo">
+                                                  
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="pentagon-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+
+                      <div class="card-actions">
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
+
+
+
+                  <!-- Ellipse Card -->
+                  <div class="card w-68 bg-base-100 shadow-xl">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) = π * a * b</p>
+                      <div>
+                        <!-- Ellipse base -->
+                        <input id="ellipse-major-radius" class="w-20 text-2xl p-2 rounded-sm" type="text" placeholder="major">
+                        <span class="mr-4 ml-4">cm</span>
+                         <!-- Ellipse height -->
+                        <input class="w-20 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius" placeholder="minor">
+                        <span>cm</span>
+                      </div>
+
+                      <div>
+                        <p class="text-2xl">Area: <span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions">
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
             </div>
             <!-- Area calculation container -->
             <div class="w-68 border-2 border-gray-700 rounded-md">
@@ -107,6 +156,9 @@
     <script src="js/triangle-calculate.js"></script>
     
     <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
     
 </body>
 </html>
